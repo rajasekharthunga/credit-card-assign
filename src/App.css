@@ -1,0 +1,143 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.App{
+  height: 100vh;
+  background-color: #bef0ff;
+}
+.whole-container{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.whole-container .mini-contianer {
+  position: relative;
+  width: 400px;
+  height: 242px;
+  margin: auto;
+}
+
+.whole-container .mini-contianer .credit-card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+
+  background: url("./assets/images/6.jpeg");
+  z-index: 2;
+  border-radius: 11px;
+  margin: auto;
+  transform: translateY(80px);
+  color: #ffffff;
+}
+.whole-container .mini-contianer .credit-card.flip{
+  transform: rotateY(180deg) translateY(80px);
+}
+.whole-container .mini-contianer .credit-card .frontside{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.whole-container .mini-contianer .credit-card .backside{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.whole-container .credit-card .row-1 .chip{
+  width: 40px;
+  margin: 20px;
+}
+.whole-container .credit-card .row-1 .card-type,
+.whole-container .credit-card .backside .row-13 .card-type{
+  width: 80px;
+  margin: 20px;
+  float: right;
+  object-fit: contain;
+}
+
+.whole-container .credit-card .row-2{
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 26px;
+}
+
+.whole-container .credit-card .row-2 span{
+  padding: 0;
+  margin: 0;
+}
+
+.whole-container .credit-card .row-2 .space{
+  margin-left: 20px;
+}
+
+.whole-container .credit-card .row-3{
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.whole-container .credit-card .row-3 .card-holder,
+.whole-container .credit-card .row-3 .card-validity
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.whole-container .credit-card .backside .row-11{
+  width: 100%;
+  height: 40px;
+  background-color: #000000;
+  margin: 20px 0 13px 0;
+}
+.whole-container .credit-card .backside .row-12{
+  margin: 20px 8px 13px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}.whole-container .credit-card .backside .row-12 .cvv-number{
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  margin: 0 8px;
+  color: black;
+  text-align: end;
+  padding: 8px;
+}
+.whole-container .credit-card .backside .row-13{
+  padding-bottom: 8px;
+}
+.whole-container .form{
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 11px;
+  box-shadow: 1px 2px 8px 2px grey;
+  width: 530px;
+  background-color: #ffffff;
+}
+.whole-container .form .ant-row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.whole-container .form .ant-row .ant-form-item-control{
+  width: 100%;
+}
+.whole-container .form .ant-row .ant-form-item-control input{
+  border-radius: 4px;
+}
+.whole-container .form .submit-button{
+  width: 100%;
+  margin-top: 13px;
+}
+.whole-container .form #credit-card-form{
+  margin-top: 80px;
+}

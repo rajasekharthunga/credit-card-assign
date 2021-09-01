@@ -77,6 +77,13 @@
 .whole-container .credit-card .row-2 .space{
   margin-left: 20px;
 }
+.whole-container .credit-card .row-2.rounded-border{
+  padding: 4px 0px;
+}
+.rounded-border{
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+}
 
 .whole-container .credit-card .row-3{
   margin: 20px;
@@ -140,4 +147,110 @@
 }
 .whole-container .form #credit-card-form{
   margin-top: 80px;
+}
+
+@media only screen and (max-width:580px) {
+  *{
+    font-size:medium;
+  }
+  .whole-container .mini-contianer {
+    width: 350px;
+    height: 200px;
+  }
+  .whole-container .form{
+    width: 400px;
+  }
+  .whole-container .credit-card .row-1 .chip{
+    width: 31px;
+    margin: 17px;
+  }
+  .whole-container .credit-card .row-1 .card-type
+  {
+    width: 62px;
+    margin: 17px;
+  }
+  .whole-container .credit-card .backside .row-13 .card-type{
+    margin: 0 17px;
+    width: 62px;
+  }
+  .rounded-border{
+    padding: 4px;
+  }
+  .whole-container .credit-card .backside .row-11{
+    height: 31px;
+    background-color: #000000;
+    margin: 17px 0 13px 0;
+  }
+  .whole-container .credit-card .backside .row-12 .cvv-number{
+    height: 31px; 
+  }
+  .whole-container .credit-card .backside .row-12{
+    margin: 17px 8px 11px 8px;
+  }
+}
+
+@media only screen and (max-width:490px) {
+  *{
+    font-size:medium;
+  }
+  .whole-container .mini-contianer {
+    width: 310px;
+    height: 170px;
+  }
+  .whole-container .form{
+    width: 350px;
+  }
+  .whole-container .credit-card .row-1 .chip{
+    width: 26px;
+    margin: 13px;
+  }
+  .whole-container .credit-card .row-1 .card-type
+  {
+    width: 53px;
+    margin: 13px;
+  }
+  .whole-container .credit-card .backside .row-13 .card-type{
+    margin: 0 13px;
+    width: 53px;
+  }
+  .rounded-border{
+    padding: 2px;
+  }
+}
+
+@media only screen and (max-width:350px) {
+  *{
+    font-size:small;
+  }
+  .whole-container .mini-contianer {
+    width: 260px;
+    height: 130px;
+  }
+  .whole-container .form{
+    width: 290px;
+  }
+  .whole-container .credit-card .row-1 .chip{
+    width: 22px;
+    margin: 11px;
+  }
+  .whole-container .credit-card .row-1 .card-type
+  {
+    width: 44px;
+    margin: 11px;
+  }
+  .whole-container .credit-card .backside .row-13 .card-type{
+    margin: 0 11px;
+    width: 44px;
+  }
+  .whole-container .credit-card .backside .row-11{
+    height: 26px;
+    background-color: #000000;
+    margin: 13px 0 11px 0;
+  }
+  .whole-container .credit-card .backside .row-12 .cvv-number{
+    height: 26px; 
+  }
+  .whole-container .credit-card .backside .row-12{
+    margin: 13px 8px 8px 8px;
+  }
 }
